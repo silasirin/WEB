@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RANDEVULAR</title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.bundle.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" aria-current="page" href="../index.html">BILGEADAM HASTANESI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="brans.html">Branslar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doktor.html">Doktorlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="randevu.html">Randevular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Adınızı giriniz</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Soyadınızı giriniz</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Tc kimlik numaranızı giriniz</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="örnek=11111111111">
+            </div>
+            <div>
+                <input type="date" class="form-control" />
+            </div>
+            <div class="col-12">
+                <div class="col-md-12">
+                    <label for="inputState" class="form-label">Branş Seçiniz</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Branşlar</option>
+                        <option>Kardiyoloji</option>
+                        <option>Nöroloji</option>
+                        <option>Cildiye</option>
+                        <option>Onkoloji</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="inputState" class="form-label">Doktor Seçiniz</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Doktorlar</option>
+                        <option>Mahmure Okan</option>
+                        <option>Sıla Şirin</option>
+                        <option>Arya Kapıkıran</option>
+                        <option>Eda Cömert</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class=" d-grid gap-8 col-10 mx-auto m-2">
+                <button class="btn btn-primary" type="button">Randevu Oluştur</button>
+
+            </div>
+        </form>
+    </div>
+
+    <!--<div class="col-md-8 ms-auto m-2">
+
+    </div>-->
+</body>
+</html>

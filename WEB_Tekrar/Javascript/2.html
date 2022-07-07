@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <script>
+        //Function
+        function Deger() {
+            //alert('Calisiyor')
+            var input = document.getElementById('txtDeger').value;
+            //console.log(input);
+            document.getElementById('content').innerHTML = input;
+
+            //Butona basildiginda; txtDeger kismindaki yaziyi al, h1 olarak belirtilen alanda goster.
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row-mt-2">
+            <div class="col-md-3">
+                <br />
+                <label>Deger: </label>
+                
+                <input type="text" class="form-control" id="txtDeger" />
+            </div>
+            <br />
+            <h1 id="content"></h1>
+        </div>
+        <div>
+            <br />
+            <input class="btn btn-primary" type="button" value="Tikla" onclick="Deger()" />
+        </div>
+    </div>
+</body>
+</html>
